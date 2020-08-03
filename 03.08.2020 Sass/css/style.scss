@@ -1,0 +1,50 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/extends";
+
+
+#main{
+    h1{
+        color:$primaryColor;
+        font-size: $fontSize*2;
+        &:hover{
+            color: red;
+        }
+    }
+    p{
+        font-size: $fontSize*1.5;
+        color:$secondryColor;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: $primaryColor;
+            border-radius: 50%;
+        }
+    }
+
+    .rectangle{
+        width: 200px;
+        height: 200px;
+        background-color: $primaryColor;
+        margin: $fontSize*2;
+        @include transform(rotate(20deg))
+    }
+
+    .btn-success{
+        @extend %btn-extend;
+        background-color: green;
+    }
+
+    .btn-danger{
+        @extend %btn-extend;
+        background-color: red;
+    }
+
+    .btn-warning{
+        @extend %btn-extend;
+        color: black;
+        background-color: orange;
+    }
+}

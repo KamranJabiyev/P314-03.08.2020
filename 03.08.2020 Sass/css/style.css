@@ -1,0 +1,56 @@
+#main .btn-success, #main .btn-danger, #main .btn-warning {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+}
+
+#main h1 {
+  color: #2E1114;
+  font-size: 40px;
+}
+
+#main h1:hover {
+  color: red;
+}
+
+#main p {
+  font-size: 30px;
+  color: #501b14;
+}
+
+#main p::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #2E1114;
+  border-radius: 50%;
+}
+
+#main .rectangle {
+  width: 200px;
+  height: 200px;
+  background-color: #2E1114;
+  margin: 40px;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+#main .btn-success {
+  background-color: green;
+}
+
+#main .btn-danger {
+  background-color: red;
+}
+
+#main .btn-warning {
+  color: black;
+  background-color: orange;
+}
+/*# sourceMappingURL=style.css.map */
